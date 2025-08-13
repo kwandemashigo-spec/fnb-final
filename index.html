@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Avante Garde Technologies</title>
+<link rel="icon" href="assets/favicon.svg" />
+<link rel="stylesheet" href="style.css" />
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="page">
+
+<!-- Preloader -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <img src="assets/logo.svg" alt="Avante Garde logo" width="140" />
+    <div class="loader-dot"></div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav" role="navigation" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="#"><img src="assets/yM4r3N01.svg" alt="Avante Garde"/></a>
+    <ul class="nav-links">
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#strategy">Strategy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('contact-form-name').focus()">Get a Quote</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" id="hero" role="banner">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <img src="assets/yM4r3N01.svg" alt="" class="bg-logo" aria-hidden="true" />
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="eyebrow">100% black-owned — Meadowlands</div>
+      <h1 class="hero-title">Engineering resilient ICT & infrastructure that breathes.</h1>
+      <p class="hero-sub">Avante Garde Technologies delivers tailored ICT design, fibre installations, managed services and security-first infrastructure for public and private sector clients.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#contact">Request Quote</a>
+        <a class="btn ghost" href="#projects">See Projects</a>
+      </div>
+
+      <ul class="hero-stats" aria-hidden="false">
+        <li><strong>24/7</strong><span>Support</span></li>
+        <li><strong>2019</strong><span>Established</span></li>
+        <li><strong>Public & Private</strong><span>Clients</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-right" id="hero-card" data-parallax>
+      <div class="glass-card">
+        <div class="card-head">
+          <div class="chip" aria-hidden="true"></div>
+          <div class="ver">v2025</div>
+        </div>
+        <div class="card-body">
+          <h4>Managed Services Dashboard</h4>
+          <p class="muted">Monitoring · Fibre · Support</p>
+
+          <div class="mini-progress">
+            <label>Network</label>
+            <div class="bar"><span style="width:88%"></span></div>
+            <label>Fibre</label>
+            <div class="bar"><span style="width:62%"></span></div>
+            <label>Security</label>
+            <div class="bar"><span style="width:95%"></span></div>
+          </div>
+        </div>
+
+        <div class="card-foot">Tel: 011 568 8348 · info@avantegarde.co.za</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- About Us -->
+<section id="about" class="section alt about-section">
+  <div class="container">
+    <br/> 
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="section-title">About Us</h2>
+    <p class="section-lead">Avante Garde Technologies is a 100% black-owned ICT and infrastructure company based in Meadowlands. Since 2019, we’ve delivered resilient, secure, and innovative solutions for both public and private sector clients.</p>
+    <div class="about-grid">
+      <div class="about-card glass-card mission-card">
+        <div class="mission-img-blend">
+          <div class="mission-img-gradient"></div>
+        </div>
+        <div class="mission-content">
+          <h4>Our Mission</h4>
+          <p>To engineer robust ICT and infrastructure that empowers businesses and communities to thrive in a digital world.</p>
+        </div>
+      </div>
+      <div class="about-card glass-card">
+        <h4>Our Values</h4>
+        <ul>
+          <li>Integrity & Accountability</li>
+          <li>Innovation & Excellence</li>
+          <li>Community Empowerment</li>
+        </ul>
+      </div>
+      <div class="about-card glass-card team-card" tabindex="0">
+        <a href="team.html" class="team-link">
+          <h4>Our Team</h4>
+          <p>Led by experienced professionals, our team combines technical expertise with a passion for service and transformation.</p>
+          <div class="see-team-popup">See the Team &rarr;</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="maincontent">
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Professional Services</h2>
+      <p class="section-lead">Architecture, network management, server deployments, security audits and tailored managed services.</p>
+
+      <div class="grid-3 cards">
+        <article class="card">
+          <div class="card-ic">ICT</div>
+          <h3>ICT Consulting</h3>
+          <p>Systems design, migrations and strategic ICT partner services.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-ic">NET</div>
+          <h3>Server & Network</h3>
+          <p>Deployment, monitoring, cabling and network lifecycle management.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-ic">SEC</div>
+          <h3>Security Management</h3>
+          <p>Security assessments, firewall & backup strategies and compliance support.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="section-lead">Delivering fibre splicing, data cabling and resilient installations.</p>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="p-head">Full Swing Trading 458</div>
+          <div class="p-date">Dec 2024 — Ongoing</div>
+          <p>Data cable connections, network installations and fibre splicing across a multi-site retail operation.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="p-head">Fibre Splicing</div>
+          <div class="p-date">2024</div>
+          <p>End-to-end fibre splicing, testing and live handover for business-critical links.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="p-head">Managed Service</div>
+          <div class="p-date">Ongoing</div>
+          <p>24/7 monitoring, patching, and SLA-driven support for enterprise clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategy -->
+  <section id="strategy" class="section">
+    <div class="container">
+      <h2 class="section-title">Growth Strategy — 2025</h2>
+      <p class="section-lead">Focused on digital presence, lead generation and authority building.</p>
+
+      <div class="strategy-grid">
+        <div class="strategy-card">
+          <h4>Foundation</h4>
+          <p>Website refresh, case studies and LinkedIn presence.</p>
+        </div>
+        <div class="strategy-card">
+          <h4>Growth Activation</h4>
+          <p>Paid campaigns, content production and lead capture funnels.</p>
+        </div>
+        <div class="strategy-card">
+          <h4>Authority</h4>
+          <p>Webinars, CRM pipelines and long-term pipeline generation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt contact-section">
+    <div class="container contact-grid">
+      <div class="contact-card glass-card">
+        <h3>Contact Us</h3>
+        <p>For supply solutions, project consultations or managed services.</p>
+        <ul class="contact-list">
+          <li><strong>Tel:</strong> 011 568 8348</li>
+          <li><strong>Email:</strong> info@avantegarde.co.za</li>
+          <li><strong>Address:</strong> 708a Tshakuma street, Meadowlands 1852</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/mkgzkokq" method="POST" aria-label="Contact form">
+        <label>Full name
+          <input id="contact-form-name" name="name" required />
+        </label>
+        <label>Company / Role
+          <input name="company" />
+        </label>
+        <label>Your email
+          <input type="email" name="email" required />
+        </label>
+        <label>Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send message</button>
+          <button class="btn ghost" type="button" onclick="alert('Schedule call — demo')">Schedule Call</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© 2025 Avante Garde Technologies — 100% black-owned. All rights reserved.</div>
+    <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

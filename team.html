@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Our Team — Avante Garde Technologies</title>
+<link rel="icon" href="assets/favicon.svg" />
+<link rel="stylesheet" href="style.css" />
+<style>
+/* Extra team page styles */
+.team-section {
+  padding: 84px 20px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+.team-card {
+  background: rgba(24,28,48,0.18);
+  backdrop-filter: blur(8px);
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(2,6,23,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 40px rgba(124,92,255,0.22);
+}
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-a);
+  margin-bottom: 1rem;
+}
+.team-card h4 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.team-card p.role {
+  font-size: 0.9rem;
+  color: var(--accent-a);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.team-card p.bio {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.team-social a {
+  color: var(--muted);
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+.team-social a:hover {
+  color: var(--accent-a);
+}
+</style>
+</head>
+<body class="page">
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Avante Garde"/></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#strategy">Strategy</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="window.location.href='index.html#contact'">Get a Quote</button>
+  </div>
+</nav>
+
+<!-- Team Header -->
+<header class="section alt">
+  <div class="container">
+    <h1 class="section-title">Meet Our Team</h1>
+    <p class="section-lead">The innovators, strategists, and engineers powering Avante Garde Technologies.</p>
+  </div>
+</header>
+
+<!-- Team Grid -->
+<section class="team-section">
+  <div class="container team-grid">
+
+    <div class="team-card">
+      <img src="assets/team1.jpg" alt="John Mokoena">
+      <h4>John Mokoena</h4>
+      <p class="role">Founder & CEO</p>
+      <p class="bio">ICT strategist with over 15 years’ experience delivering secure infrastructure solutions.</p>
+      <div class="team-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="assets/team2.jpg" alt="Thandiwe Nkosi">
+      <h4>Thandiwe Nkosi</h4>
+      <p class="role">Operations Director</p>
+      <p class="bio">Ensures operational excellence and client satisfaction across all our projects.</p>
+      <div class="team-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="assets/team3.jpg" alt="Lerato Mahlangu">
+      <h4>Lerato Mahlangu</h4>
+      <p class="role">Lead Engineer</p>
+      <p class="bio">Expert in fibre networks and secure technical infrastructure design.</p>
+      <div class="team-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <img src="assets/team4.jpg" alt="Simphiwe Dlamini">
+      <h4>Simphiwe Dlamini</h4>
+      <p class="role">Project Manager</p>
+      <p class="bio">Manages installations from start to finish, keeping projects on track and on budget.</p>
+      <div class="team-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© 2025 Avante Garde Technologies — 100% black-owned. All rights reserved.</div>
+    <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+
+<!-- Font Awesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
